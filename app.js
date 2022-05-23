@@ -1,44 +1,42 @@
-//variables
-
-const cartBtn = document.querySelector(".cart-button");
-const closeCartBtn = document.querySelector(".close-cart");
-const clearCartBtn = document.querySelector(".clear-cart");
-const cartDOM = document.querySelector(".cart");
-const cartOverlay = document.querySelector(".cart-overlay");
-const cartItems = document.querySelector(".cart-items");
-const cartTotal = document.querySelector(".cart-total");
-const cartContent = document.querySelector(".cart-content");
-const productsDOM = document.querySelector(".products-center");
-
-// cart
-
-let cart = [];
-
-// get the products
-class Products{
-    async getProducts(){
-        try{
-            let result = await fetch('products.json');
-            let data = await result.json();
-            return data;
-        }catch(error){
-            console.log(error);
-        }
-    }
-}
-// display products
-class UI {
-
-}
-// local storage
-class Storage{
-
-}
-// event listener
-document.addEventListener("DOMContentLoaded",()=>{
-    const ui = new UI();
-    const products = new Products();
-    
-    //get all products
-    products.getProducts().then(data => console.log(data));
-})
+const getElement = (selection) => {
+    const element = document.querySelector(selection);
+    if (element) return element;
+    throw new Error(
+      `Please check "${selection}" selector, no such element exist`
+    );
+  };
+  
+  const toggleNav = getElement('.toggle-nav');
+  const sidebarOverlay = getElement('.sidebar-overlay');
+  const closeBtn = getElement('.sidebar-close');
+  
+  toggleNav.addEventListener('click', () => {
+    sidebarOverlay.classList.add('show');
+  });
+  closeBtn.addEventListener('click', () => {
+    sidebarOverlay.classList.remove('show');
+  });
+  
+  const cartOverlay = getElement('.cart-overlay');
+  const closeCartBtn = getElement('.close-cart');
+  const toggleCartBtn = getElement('.toggle-cart');
+  const productCartBtnList = [...document.querySelectorAll('.basket-btn')];
+  
+  toggleCartBtn.addEventListener('click', () => {
+    cartOverlay.classList.add('show');
+  });
+  closeCartBtn.addEventListener('click', () => {
+    cartOverlay.classList.remove('show');
+  });
+  productCartBtnList.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      cartOverlay.classList.add('show');
+    });
+  });
+  
+  const singleProductAddToCartBtn = getElement('.addToCartBtn');
+  
+  singleProductAddToCartBtn.addEventListener('click', () => {
+    cartOverlay.classList.add('show');
+  });
+  
