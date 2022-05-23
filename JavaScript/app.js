@@ -18,7 +18,7 @@ const getElement = (selection) => {
   });
   
   const cartOverlay = getElement('.cart-overlay');
-  const closeCartBtn = getElement('.close-cart');
+  const closeCartBtn = getElement('.cart-close');
   const toggleCartBtn = getElement('.toggle-cart');
   const productCartBtnList = [...document.querySelectorAll('.basket-btn')];
   
