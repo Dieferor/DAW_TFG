@@ -275,6 +275,10 @@ Navbar
   justify-content: space-between;
   padding: 0 1.5rem;
 }
+.nav-icons{
+  display: inline-flex;
+  gap: 1rem;
+}
 .nav-links {
   display: none;
 }
@@ -303,12 +307,15 @@ Navbar
   cursor: pointer;
   transition: var(--transition);
 }
-.toggle-cart {
+.toggle-cart, .toggle-login {
   background: transparent;
   border-color: transparent;
   font-size: 1.6rem;
   color: var(--textColor);
   cursor: pointer;
+}
+.toggle-login a{
+  color: var(--textColor);
 }
 .cart-item-count {
   position: absolute;
@@ -362,7 +369,7 @@ Navbar
 .page .nav-link:hover {
   color: var(--primary-500);
 }
-.page .toggle-cart {
+.page .toggle-cart, .page .toggle-login{
   color: var(--gray-100);
 }
 /*

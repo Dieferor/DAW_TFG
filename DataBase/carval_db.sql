@@ -2,6 +2,7 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `products`;
+DROP TABLE IF EXISTS `customers`;
 --
 -- Table structure for table products
 --
@@ -22,3 +23,14 @@ INSERT INTO `products` (`product_title`, `product_url`, `product_img`, `product_
 ('cama doble diseño', 'product-url-2', 'product-2.jpeg', '1599', 'decripcion2', true),
 ('cama doble tradicional', 'product-url-3', 'product-3.jpeg', '999', 'decripcion3', true),
 ('cama doble 3', 'product-url-4', 'product-4.jpeg', '1199', 'decripcion3',false);
+
+CREATE TABLE `customers` (
+  `customer_id` int(10) NOT NULL AUTO_INCREMENT,
+  `customer_name` text NOT NULL,
+  `customer_email` text NOT NULL, 
+  `customer_password` text NOT NULL,
+  PRIMARY KEY (`customer_id`)    
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `customers` (`customer_name`, `customer_email`, `customer_password`) VALUES
+('pepito perez', 'pepito_perez@yahoo.com', SHA1('password'));
