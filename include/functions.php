@@ -81,7 +81,7 @@ function getAllProducts()
     </div>
     <footer>
       <h5><a class='product-name' href='single-product.php?pro_id=$pro_id' >$pro_title</a></h5>
-      <span class='product-price'>$pro_price</span>
+      <span class='product-price'>$pro_price €</span>
     </footer>
   </article>
   ";

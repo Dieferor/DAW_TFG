@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
     
             echo "<script>alert('Has iniciado sesión')</script>";
     
-            echo "<script>window.open('customer_menu.php')</script>";
+            echo "<script>window.open('customer_menu.php','_self')</script>";
         }
     }   
 }
