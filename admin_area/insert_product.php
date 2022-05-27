@@ -158,7 +158,7 @@ if (!isset($_SESSION['admin_email'])) {
 
                     <li class="active">
 
-                      <a data-toggle="tab" href="#description"> Product Description </a>
+                      <a data-toggle="tab" href="#description"> Descripción de producto </a>
 
                     </li>
 

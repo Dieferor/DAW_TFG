@@ -30,9 +30,7 @@ if ($check_product == 0) {
 
   $pro_desc = $row_product['product_desc'];
 
-  $pro_img = $row_product['product_img'];
-
-  $pro_url = $row_product['product_url'];
+  $pro_img = $row_product['product_img'];  
 
 ?>
 

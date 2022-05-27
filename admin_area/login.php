@@ -26,9 +26,9 @@ include("includes/db.php");
 
 <h2 class="form-login-heading" >Admin Login</h2>
 
-<input type="text" class="form-control" name="admin_email" placeholder="Email Address" required >
+<input type="text" class="form-control" name="admin_email" placeholder="Emai" required >
 
-<input type="password" class="form-control" name="admin_pass" placeholder="Password" required >
+<input type="password" class="form-control" name="admin_pass" placeholder="Contraseña" required >
 
 <button class="btn btn-lg btn-primary btn-block" type="submit" name="admin_login" >
 
@@ -65,14 +65,14 @@ if($count==1){
 
 $_SESSION['admin_email']=$admin_email;
 
-echo "<script>alert('You are Logged in into admin panel')</script>";
+echo "<script>alert('Acceso al panel de admin')</script>";
 
-echo "<script>window.open('index.php?dashboard','_self')</script>";
+echo "<script>window.open('/E-commerce CARVAL/admin_area/index.php?dashboard','_self')</script>";
 
 }
 else {
 
-echo "<script>alert('Email or Password is Wrong')</script>";
+echo "<script>alert('Email o contraseña incorrectos')</script>";
 
 }
 
