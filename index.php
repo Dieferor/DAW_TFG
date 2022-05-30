@@ -1,7 +1,9 @@
 <?php
 session_start();
-include("./include/functions.php");
-include("./include/db.php");
+include($_SERVER['DOCUMENT_ROOT']."./include/functions.php");
+include($_SERVER['DOCUMENT_ROOT']."/include/db.php");
+$_SERVER['DOCUMENT_ROOT'];
+
 ?>
 
 <!DOCTYPE html>
@@ -9,14 +11,14 @@ include("./include/db.php");
 
 <!-- header -->
 <?php
-include("./templates/header.html");
+include($_SERVER['DOCUMENT_ROOT']."/templates/header.html");
 ?>
 <!-- end of header -->
 
 <body>
   <!-- navbar -->
   <?php
-  include("./templates/nav-bar.html");
+  include($_SERVER['DOCUMENT_ROOT']."/templates/nav-bar.html");
   ?>
   <!-- end of navbar -->
 
@@ -24,7 +26,7 @@ include("./templates/header.html");
   <div class="home">
     <div class="banner">
       <h1 class="banner-title">Carpintería Valdebría</h1>
-      <button class="banner-btn"><a href="./products.php">Compra online</a></button>
+      <button class="banner-btn"><a href="$_SERVER['DOCUMENT_ROOT']/products.php">Compra online</a></button>
     </div>
   </div>
   <!-- end of home screen -->
@@ -49,24 +51,24 @@ include("./templates/header.html");
 
   <!-- sidebar -->
   <?php
-  include("./templates/sidebar.html");
+  include($_SERVER['DOCUMENT_ROOT']."/templates/sidebar.html");
   ?>
   <!-- end of sidebar -->
 
   <!-- cart -->
   <?php
-  include("./templates/cart.html");
+  include($_SERVER['DOCUMENT_ROOT']."/templates/cart.html");
   ?>
   <!-- end of cart -->
 
   <!-- footer -->
   <?php
-  include("./templates/footer.html");
+  include($_SERVER['DOCUMENT_ROOT']."/templates/footer.html");
   ?>
   <!-- end of footer -->
 
   <!-- Javascript -->
-  <script type="text/javascript" src="./JavaScript/app.js"></script>
+  <script type="text/javascript" src="$_SERVER['DOCUMENT_ROOT']/JavaScript/app.js"></script>
 </body>
 
 </html>
