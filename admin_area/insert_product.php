@@ -222,7 +222,7 @@ if (!isset($_SESSION['admin_email'])) {
 
     $temp_name = $_FILES['product_img']['tmp_name'];
 
-    move_uploaded_file($temp_name, "./assets/images/$product_img");
+    move_uploaded_file($temp_name, "./images/$product_img");
 
     $insert_product = "insert into products (`product_title`, `product_img`, `product_price`, `product_desc`, `product_featured`, `manufacturer_id`) values ('$product_title','$product_img','$product_price','$product_desc', false, '$manufacturer_id')";
 
