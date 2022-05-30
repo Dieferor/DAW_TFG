@@ -67,7 +67,7 @@ $_SESSION['admin_email']=$admin_email;
 
 echo "<script>alert('Acceso al panel de admin')</script>";
 
-echo "<script>window.open('/ecommerce-carval/admin_area/index.php?dashboard','_self')</script>";
+echo "<script>window.open('./admin_area/index.php?dashboard','_self')</script>";
 
 }
 else {
