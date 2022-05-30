@@ -68,7 +68,7 @@ include($_SERVER['DOCUMENT_ROOT']."/templates/header.php");
   <!-- end of footer -->
 
   <!-- Javascript -->
-  <script type="text/javascript" src="$_SERVER['DOCUMENT_ROOT']/JavaScript/app.js"></script>
+  <script type="text/javascript" src="./JavaScript/app.js"></script>
 </body>
 
 </html>
