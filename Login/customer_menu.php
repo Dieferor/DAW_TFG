@@ -5,7 +5,7 @@ session_start();
 <html lang="es">
 
 <?php
-include("../templates/header.php");
+include("./templates/header.php");
 ?>
 <style>
 	.center {
@@ -32,13 +32,13 @@ if (!isset($_SESSION['customer_email'])) {
 	exit;
 } else {
 	$customer_name = $_SESSION['customer_name'];
-	include("../templates/header.php");
+	include("./templates/header.php");
 ?>
 
 	<body>
 		<!-- navbar -->
 		<?php
-		include("../templates/nav-bar.html");
+		include("./templates/nav-bar.html");
 		?>
 		<!-- end of navbar -->
 		<div class="center">
@@ -51,19 +51,19 @@ if (!isset($_SESSION['customer_email'])) {
 		</div>
 		<!-- sidebar -->
 		<?php
-		include("../templates/sidebar.html");
+		include("./templates/sidebar.html");
 		?>
 		<!-- end of sidebar -->
 
 		<!-- cart -->
 		<?php
-		include("../templates/cart.html");
+		include("./templates/cart.html");
 		?>
 		<!-- end of cart -->
 
 		<!-- footer -->
 		<?php
-		include("../templates/footer.html");
+		include("./templates/footer.html");
 		?>
 		<!-- end of footer -->
 
