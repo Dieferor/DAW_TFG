@@ -7,7 +7,7 @@ $_SERVER['DOCUMENT_ROOT'];
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <!-- header -->
 <?php
