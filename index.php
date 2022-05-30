@@ -1,6 +1,6 @@
 <?php
 session_start();
-include($_SERVER['DOCUMENT_ROOT']."./include/functions.php");
+include($_SERVER['DOCUMENT_ROOT']."/include/functions.php");
 include($_SERVER['DOCUMENT_ROOT']."/include/db.php");
 $_SERVER['DOCUMENT_ROOT'];
 
