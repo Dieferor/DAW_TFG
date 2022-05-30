@@ -5,7 +5,7 @@ session_start();
 <html lang="es">
 
 <?php
-include("../templates/header.html");
+include("../templates/header.php");
 ?>
 <style>
 	.center {
@@ -32,7 +32,7 @@ if (!isset($_SESSION['customer_email'])) {
 	exit;
 } else {
 	$customer_name = $_SESSION['customer_name'];
-	include("../templates/header.html");
+	include("../templates/header.php");
 ?>
 
 	<body>

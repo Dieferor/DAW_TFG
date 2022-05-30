@@ -6,6 +6,7 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/3c448482ea.js" crossorigin="anonymous"></script>
     <!-- Css -->
-    <link rel="stylesheet" href="$_SERVER['DOCUMENT_ROOT']/css/normalize.css"/>
-    <link rel="stylesheet" href="$_SERVER['DOCUMENT_ROOT']/css/styles.css"/>
+
+    <link rel="stylesheet" href="<?=$_SERVER['DOCUMENT_ROOT']?>/css/normalize.css"/>
+    <link rel="stylesheet" href="<?=$_SERVER['DOCUMENT_ROOT']?>/css/styles.css"/>
 </head>

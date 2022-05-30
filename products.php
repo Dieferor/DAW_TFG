@@ -8,7 +8,7 @@ include("./include/db.php");
 
 <!-- header -->
 <?php
-include("./templates/header.html");
+include("./templates/header.php");
 ?>
 <!-- end of header -->
 

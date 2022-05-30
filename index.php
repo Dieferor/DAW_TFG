@@ -11,7 +11,7 @@ $_SERVER['DOCUMENT_ROOT'];
 
 <!-- header -->
 <?php
-include($_SERVER['DOCUMENT_ROOT']."/templates/header.html");
+include($_SERVER['DOCUMENT_ROOT']."/templates/header.php");
 ?>
 <!-- end of header -->
 
