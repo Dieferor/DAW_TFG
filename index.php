@@ -8,6 +8,7 @@ $_SERVER['DOCUMENT_ROOT'];
 
 <!DOCTYPE html>
 <html lang="es">
+<meta charset="utf-8" />
 
 <!-- header -->
 <?php
