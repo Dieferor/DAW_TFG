@@ -174,7 +174,7 @@ if (!isset($_SESSION['admin_email'])) {
                 <div class="col-md-6">
 
                   <input type="file" name="product_img" class="form-control">
-                  <br><img src="/E-commerce CARVAL/assets/images/<?php echo $p_image; ?>" width="70" height="70">
+                  <br><img src="/carval-ecommerce/assets/images/<?php echo $p_image; ?>" width="70" height="70">
 
                 </div>
 
