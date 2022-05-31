@@ -35,11 +35,11 @@ if ($check_product == 0) {
 ?>
 
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="es">
 
   <!-- header -->
   <?php
-  include("./templates/header.html");
+  include("./templates/header.php");
   ?>
   <!-- end of header -->
 

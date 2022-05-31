@@ -7,11 +7,12 @@ $_SERVER['DOCUMENT_ROOT'];
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<meta charset="utf-8" />
 
 <!-- header -->
 <?php
-include($_SERVER['DOCUMENT_ROOT']."/templates/header.html");
+include($_SERVER['DOCUMENT_ROOT']."/templates/header.php");
 ?>
 <!-- end of header -->
 

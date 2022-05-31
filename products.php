@@ -4,11 +4,11 @@ include("./include/functions.php");
 include("./include/db.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <!-- header -->
 <?php
-include("./templates/header.html");
+include("./templates/header.php");
 ?>
 <!-- end of header -->
 

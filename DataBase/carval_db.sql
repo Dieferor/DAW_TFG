@@ -22,7 +22,7 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`product_title`, `product_img`, `product_price`, `product_desc`, `product_featured`, `manufacturer_id`) VALUES
 ('cama de matrimonio', 'product-1.jpeg', '1299', 'decripcion1', true, 3),
-('cama doble diseño', 'product-2.jpeg', '1599', 'decripcion2', true, 3),
+('cama doble dise&ntildeo', 'product-2.jpeg', '1599', 'decripcion2', true, 3),
 ('cama doble tradicional', 'product-3.jpeg', '999', 'decripcion3', true, 2),
 ('cama doble moderna', 'product-4.jpeg', '1199', 'decripcion3',false, 2);
 

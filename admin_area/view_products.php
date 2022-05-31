@@ -103,7 +103,7 @@ if (!isset($_SESSION['admin_email'])) {
 
                                         <td><?php echo $pro_title; ?></td>
 
-                                        <td><img src="/E-commerce CARVAL/assets/images/<?php echo $pro_image; ?>" width="60" height="60"></td>
+                                        <td><img src="./images/<?php echo $pro_image; ?>" width="60" height="60"></td>
 
                                         <td><?php echo $pro_price; ?> €</td>
                                         
